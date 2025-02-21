@@ -101,7 +101,7 @@ SELECT [dailyactivity].Id,
 FROM `fitbit_data.dailyactivty`
 LEFT JOIN `fitbit_data.sleepday`
 ON 'fitbit_data.dailyactivity.Id'='fitbit_data.sleepday.Id'
-AND 'fitbit_datadailyactivity.activitydate'='fitbit_data.sleepday.sleepday'
+AND 'fitbit_data.dailyactivity.activitydate'='fitbit_data.sleepday.sleepday'
 
 -- 8. Create a table categorizing the amount of sleep users’ had and aggregate counts of each category.
 SELECT
